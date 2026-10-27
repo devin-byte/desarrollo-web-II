@@ -1,0 +1,189 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111827;
+  color: #f3f4f6;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 45px 24px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  color: #c4b5fd;
+  letter-spacing: 1px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #9ca3af;
+  margin: 12px 0 35px;
+}
+
+.formulario-contenedor,
+.tabla-contenedor {
+  background: #1f2937;
+  padding: 28px;
+  margin-bottom: 25px;
+  border: 1px solid #374151;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px #00000020;
+}
+
+h2 {
+  margin: 0 0 22px;
+  font-size: 21px;
+  color: #e5e7eb;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  color: #d1d5db;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  background: #111827;
+  color: #f9fafb;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  font: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #6b7280;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #8b5cf6;
+  border-color: #8b5cf6;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 15px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.boton-agregar {
+  margin-top: 8px;
+  background: #7c3aed;
+}
+
+.boton-agregar:hover {
+  background: #6d28d9;
+  transform: translateY(-1px);
+}
+
+.tabla-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+th {
+  background: #312e81;
+  color: #e0e7ff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+th,
+td {
+  padding: 15px 12px;
+  text-align: left;
+  border-bottom: 1px solid #374151;
+  vertical-align: middle;
+}
+
+td {
+  color: #d1d5db;
+  font-size: 14px;
+}
+
+tbody tr {
+  transition: background 0.2s;
+}
+
+tbody tr:hover {
+  background: #273449;
+}
+
+td select {
+  min-width: 135px;
+  font-size: 13px;
+}
+
+.boton-eliminar {
+  background: #be123c;
+}
+
+.boton-eliminar:hover {
+  background: #9f1239;
+}
+
+.sin-tareas {
+  padding: 25px 10px;
+  text-align: center;
+  color: #9ca3af;
+  background: #111827;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    padding: 30px 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .formulario-contenedor,
+  .tabla-contenedor {
+    padding: 18px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+}
