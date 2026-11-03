@@ -1,4 +1,3 @@
-
 'use client'
 
 import CardProducto from '@/app/Components/CardProducto';
