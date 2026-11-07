@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #333333;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #355c7d;
+    color: white;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 23px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.trivia {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.trivia h1 {
+    margin-bottom: 15px;
+    color: #355c7d;
+    font-size: 27px;
+}
+
+.trivia > p {
+    margin-bottom: 20px;
+    color: #555555;
+}
+
+.contenedor-pregunta {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.contenedor-pregunta h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    background-color: #5b83a5;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #456987;
+}
+
+button:disabled {
+    background-color: #999999;
+    cursor: not-allowed;
+}
+
+.resultado {
+    margin-top: 25px;
+}
+
+.resultado p {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
