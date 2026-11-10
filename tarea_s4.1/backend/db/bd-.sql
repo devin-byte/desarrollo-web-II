@@ -1,4 +1,4 @@
-/*CREATE DATABASE ecommerce;
+CREATE DATABASE ecommerce;
 USE ecommerce;
 CREATE TABLE Producto (
     idProducto INT PRIMARY KEY AUTO_INCREMENT,
@@ -12,4 +12,4 @@ CREATE TABLE carrito (
     idproducto INT,
     isvProducto DOUBLE,
     ordenCompra INT
-);*/
+);
