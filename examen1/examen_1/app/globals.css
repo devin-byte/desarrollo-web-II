@@ -6,52 +6,77 @@ body {
     margin: 0;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #f4f1fa;
     color: #333;
 }
 
 main {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 30px auto;
-    padding: 25px;
+    padding: 30px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
-h1, h2 {
+h1 {
     text-align: center;
+    color: #55358b;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #55358b;
+    margin-top: 25px;
 }
 
 button {
-    padding: 10px 15px;
+    padding: 11px 18px;
     margin: 8px 5px;
     border: none;
-    border-radius: 5px;
-    background-color: #2878c7;
+    border-radius: 6px;
+    background-color: #7350a8;
     color: white;
+    font-size: 14px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #185b9b;
+    background-color: #55358b;
 }
 
 input {
     display: block;
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #d8cde9;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #7350a8;
 }
 
 .login {
     width: 350px;
+    max-width: 100%;
     margin: 80px auto;
-    padding: 25px;
+    padding: 30px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.10);
     text-align: center;
+}
+
+.login h1 {
+    font-size: 25px;
+}
+
+.login h2 {
+    margin-bottom: 20px;
 }
 
 table {
@@ -61,13 +86,22 @@ table {
     background-color: white;
 }
 
-th, td {
+th {
+    background-color: #7350a8;
+    color: white;
+    padding: 13px;
+}
+
+td {
     padding: 12px;
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #e8e2f0;
     text-align: center;
 }
 
-th {
-    background-color: #2878c7;
-    color: white;
+tr:hover {
+    background-color: #f7f4fb;
+}
+
+p {
+    margin-top: 12px;
 }
